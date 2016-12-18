@@ -1,2 +1,3 @@
-# paystack-laravel
-Laravel 5 Package for Paystack https://paystack.co/
+# laravel-amplify
+
+Laravel 5 Package for Amplify https://amplifypay.com

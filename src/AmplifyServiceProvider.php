@@ -1,10 +1,10 @@
 <?php
 
-namespace Ammezie\Paystack;
+namespace Ammezie\Amplify;
 
 use Illuminate\Support\ServiceProvider;
 
-class PaystackServiceProvider extends ServiceProvider
+class AmplifyServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap any application services.
@@ -13,11 +13,11 @@ class PaystackServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $dist = __DIR__.'/../config/paystack.php';
+        $dist = __DIR__.'/../config/amplify.php';
         $this->publishes([
-            $dist => config_path('paystack.php'),
+            $dist => config_path('amplify.php'),
         ]);
-        $this->mergeConfigFrom($dist, 'paystack');
+        $this->mergeConfigFrom($dist, 'amplify');
     }
 
     /**
